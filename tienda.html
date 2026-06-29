@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - OPTICCOM</title>
+    <link rel="icon" type="image/png" href="img/icono-pestaña-opticcom.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="tienda.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+        <div class="prim-nav-bg">
+            <div class="prim-nav">
+                <nav>
+                    <ul>
+                        <li><a class="prim-a" href="index.html">Hogar</a></li>
+                        <li><a class="prim-a" href="empresa.html">Empresas</a></li>
+                        <li><a class="prim-a" href="entidad-publica.html">Entidad Pública</a></li>
+                    </ul>
+                </nav>
+                <div class="centrar">
+                    <a href="#">Información Adicional</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-nav">
+            <div class="centrar">
+                <a href="index.html">
+                    <img class="logo" src="img/Logo.png" alt="logo de Opticcom">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="sec-a" href="index.html#planes">Ver Planes</a></li>
+                    <li><a class="sec-a sec-a-active" href="tienda.html">Tienda</a></li>
+                    <li><a class="sec-a" href="index.html#nosotros">Nosotros</a></li>                    
+                    <li><a class="sec-a" href="index.html#contacto">¿Necesitas ayuda?</a></li>
+                </ul>
+            </nav>
+                <a href="carro.html" class="btn-carrito-icono" style="text-decoration: none; color: inherit; position: relative;">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span id="carrito-contador" style="background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px; position: absolute; top: -5px; right: -10px;">0</span>
+                </a> 
+                <div class="centrar">
+                    <a href="https://chat.whatsapp.com/BBpl7BKVlzkFASGPSKVDCg" class="btn-contacto-opticcom">
+                        <img class="icono-wsp" src="img/whatsapp-svgrepo-com.svg" alt="WhatsApp">
+                        <span>Contáctanos</span>
+                    </a>
+                </div>
+            </div>
+    </header>
+    
+    <main class="tienda-main">
+        <div class="tienda-filtros">
+            <button class="filtro-btn activo"><strong>Todos los productos</strong><span>12 artículos</span></button>
+            <button class="filtro-btn"><strong>Recién llegado</strong><span>4 artículos</span></button>
+            <button class="filtro-btn"><strong>Mejor vendido</strong><span>5 artículos</span></button>
+            <button class="filtro-btn"><strong>Exclusivo</strong><span>3 artículos</span></button>
+        </div>
+        
+        <div class="tienda-grid">
+            <article class="producto-card">
+                <div class="producto-etiquetas"><span class="tag-venta">¡Venta!</span><span class="tag-descuento">-20%</span></div>
+                <span class="producto-precio">S/ 110.90</span>
+                <img src="img/Productos/Polo-Negro-Opticcom.png" alt="Polo Negro" class="producto-img">
+                <div class="producto-info"><h3>Polo Negro Opticcom</h3><p>Tendencias</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 89.90</span>
+                <img src="img/Productos/Peluche-Mascota-Opticcom.png" alt="Mascota Opticcom" class="producto-img">
+                <div class="producto-info"><h3>Peluche YIGA</h3><p>Mejor vendido</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 14.90</span>
+                <img src="img/Productos/Taza-Opticcom.png" alt="Taza Opticcom" class="producto-img">
+                <div class="producto-info"><h3>Taza Opticcom</h3><p>Recién llegado</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <div class="producto-etiquetas"><span class="tag-venta">Stock Limitado</span></div>
+                <span class="producto-precio">S/ 119.90</span>
+                <img src="img/Productos/Polera-Opticcom.png" alt="Polera Opticcom" class="producto-img">
+                <div class="producto-info"><h3>Polera Opticcom Oficial</h3><p>Exclusivo</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 54.90</span>
+                <img src="img/Productos/Mouse-Opticcom.png" alt="Mosue Black orange" class="producto-img">
+                <div class="producto-info"><h3>Mouse Black</h3><p>Tendencias</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 34.90</span>
+                <img src="img/Productos/Libreta-Opticcom.png" alt="Libreta" class="producto-img">
+                <div class="producto-info"><h3>Libreta 2026 Forro de Cuero</h3><p>Mejor vendido</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 29.90</span>
+                <img src="img/Productos/Llvero de cristal-Opticcom.png" alt="Llavero" class="producto-img">
+                <div class="producto-info"><h3>Llavero de Cristal</h3><p>Recién llegado</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 179.90</span>
+                <img src="img/Productos/Audifonos-Opticcom.png" alt="Accesorio" class="producto-img">
+                <div class="producto-info"><h3>Auriculares OpticcoM</h3><p>Exclusivo</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 17.90</span>
+                <img src="img/Productos/Toma Todo- Opticcom.png" alt="Toma todo" class="producto-img">
+                <div class="producto-info"><h3>Toma Todo</h3><p>Tendencias</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 44.90</span>
+                <img src="img/Productos/USB-Opticcom.png" alt="USB" class="producto-img">
+                <div class="producto-info"><h3>USB (500 GB)</h3><p>Mejor vendido</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 99.90</span>
+                <img src="img/Productos/Cupon-de-Descuento.png" alt="Cupon" class="producto-img">
+                <div class="producto-info"><h3>Cupon de descuento</h3><p>Recién llegado</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+
+            <article class="producto-card">
+                <span class="producto-precio">S/ 219.90</span>
+                <img src="img/Productos/Combo-de-Router.png" alt="Pack" class="producto-img">
+                <div class="producto-info"><h3>Pack Opticcom 5 meses gratis</h3><p>Exclusivo</p><button class="btn-carrito">Agregar al carro</button></div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="prim-foot">
+            
+            <div class="centrar">
+                <a href="#">
+                    <svg class="img-logos-footer" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>WhatsApp</title>
+                        <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="img-logos-footer" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="centrar">
+                <a class="container-logo" href="#">
+                    <img class="footer-logo" src="img/Logo.png" alt="logo de Opticcom">
+                </a>
+            </div>
+
+            <div class="foot-enlaces">
+                <a class="foot-centrar-enlaces" href="#">
+                    <svg class="img-logos" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z" fill="currentColor"/>
+                        <path d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z" fill="currentColor"/>
+                    </svg>
+                    918645968
+                </a>
+
+                <a class="foot-centrar-enlaces" href="#">
+                    <svg class="img-logos" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>gmail</title>
+                        <path d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z"></path>
+                    </svg>
+                    opticcom@outlook.com
+                </a>
+
+                <a class="foot-centrar-enlaces" href="#">
+                    <svg class="img-logos" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 274.102 274.102" xml:space="preserve">
+                        <g>
+                            <path d="M121.072,265.448C91.706,226.423,31.949,142.14,31.949,102.52C31.949,45.895,81.539,0,138.152,0 c56.635,0,104,45.895,104,102.52c0,40.899-59.699,124.365-89.147,163.037C144.299,276.995,129.716,276.941,121.072,265.448z M136.925,37.668c-16.363,0-29.622,13.202-29.622,29.571c0,16.324,13.265,29.583,29.622,29.583 c16.32,0,29.592-13.265,29.592-29.583C166.517,50.87,153.245,37.668,136.925,37.668z"/>
+                        </g>
+                    </svg>
+                    Pasaje Cayetano Quiroz 1003 / El Tambo / Huancayo, JUNIN
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="footer-derechos">
+            <p class="footer-derechos-parrafo">© 2025 OPTICCOM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    window.onload = function() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        document.getElementById('carrito-contador').innerText=carrito.length;
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="tienda.js"></script>
+</html>

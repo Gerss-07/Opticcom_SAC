@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de compra - OPTICCOM</title>
+    <link rel="icon" type="image/png" href="img/icono-pestaña-opticcom.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comprar.css">
+</head>
+
+<body>
+    <header class="checkout-header">
+        <a href="tienda.html">
+            <img src="img/Logo.png" alt="OPTICCOM" class="checkout-logo">
+        </a>
+        <div class="checkout-seguro">
+            Compra segura
+        </div>
+    </header>
+    <main class="checkout-main container">
+        <div id="alertaCompraExitosa" class="alert alert-success alert-dismissible fade show d-none mt-4" role="alert">
+            <h4 class="alert-heading">¡Compra registrada correctamente!</h4>
+            <p>
+                Tu pedido fue registrado con éxito. Nos comunicaremos contigo para coordinar la entrega.
+            </p>
+            <hr>
+            <p class="mb-0">
+                Gracias por comprar en OPTICCOM.
+            </p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+        <div class="checkout-pasos">
+            <div class="paso activo" id="paso-entrega">
+                <span>1</span>
+                <p>Entrega</p>
+            </div>
+            <div class="linea" id="linea-pasos"></div>
+            <div class="paso" id="paso-pago">
+                <span>2</span>
+                <p>Pago</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <form class="checkout-card needs-validation" id="seccion-entrega" novalidate>
+                    <h3>Datos de entrega</h3>
+                    <p class="texto-suave">Completa tus datos para coordinar la entrega de tus productos.</p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombreCliente" placeholder="Ejemplo: Juan Pérez" required>
+                            <div class="invalid-feedback">
+                                Ingresa tu nombre completo.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefonoCliente" placeholder="Ejemplo: 987654321" required>
+                            <div class="invalid-feedback">
+                                Ingresa tu número de teléfono.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correoCliente" placeholder="correo@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Ingresa un correo válido.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Distrito / Ciudad</label>
+                            <input type="text" class="form-control" id="ciudadCliente" placeholder="Ejemplo: Huancayo" required>
+                            <div class="invalid-feedback">
+                                Ingresa tu distrito o ciudad.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Dirección de entrega</label>
+                            <input type="text" class="form-control" id="direccionCliente" placeholder="Calle, número, referencia" required>
+                            <div class="invalid-feedback">
+                                Ingresa tu dirección de entrega.
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark mt-4" id="btnContinuarPago">
+                        Continuar a pago
+                    </button>
+                </form>
+
+                <section class="checkout-card d-none" id="seccion-pago">
+                    <h3>Método de pago</h3>
+                    <p class="texto-suave">Selecciona cómo deseas pagar tu pedido.</p>
+
+                    <div class="metodos-pago mt-3">
+
+                        <label class="metodo-pago">
+                            <input type="radio" name="metodoPago" value="Yape" checked>
+                            <div>
+                                <strong>Yape / Plin</strong>
+                                <p>Pago rápido mediante aplicativo móvil.</p>
+                            </div>
+                        </label>
+
+                        <label class="metodo-pago">
+                            <input type="radio" name="metodoPago" value="Tarjeta">
+                            <div>
+                                <strong>Tarjeta de crédito o débito</strong>
+                                <p>Pago con tarjeta Visa, Mastercard u otra.</p>
+                            </div>
+                        </label>
+
+                        <label class="metodo-pago">
+                            <input type="radio" name="metodoPago" value="Efectivo">
+                            <div>
+                                <strong>Pago contra entrega</strong>
+                                <p>Paga cuando recibas tu producto.</p>
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="button" class="btn btn-outline-secondary" id="btnVolverEntrega">
+                            Volver
+                        </button>
+
+                        <button type="button" class="btn btn-warning flex-fill" id="btnFinalizarCompra">
+                            Finalizar compra
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="col-lg-4">
+                <aside class="checkout-resumen">
+                    <h4>Resumen de la compra</h4>
+                    <div id="resumen-productos" class="resumen-productos">
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <strong>S/ <span id="resumen-subtotal">0.00</span></strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-2">
+                        <span>Total</span>
+                        <strong class="total-final">S/ <span id="resumen-total">0.00</span></strong>
+                    </div>
+
+                    <a href="carro.html" class="btn btn-outline-dark w-100 mt-3">
+                        Volver al carrito
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="compra.js"></script>
+</body>
+</html>

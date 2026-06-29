@@ -1,0 +1,200 @@
+body{
+    background: #ffffff;
+}
+
+h2{
+    font-weight: 700;
+    color: #111;
+}
+.shop_table{
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border: none;
+}
+.shop_table thead{
+    background: #111;
+    color: white;
+}
+.shop_table th{
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.shop_table td{
+    padding: 18px;
+    vertical-align: middle;
+}
+
+.shop_table tbody tr{
+    transition: 0.3s;
+}
+
+.shop_table tbody tr:hover{
+    background: #fafafa;
+}
+
+.shop_table img{
+    width: 60px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    padding: 5px;
+}
+
+.shop_table td button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ff3b30;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shop_table td div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.shop_table td button:nth-child(2),
+.shop_table td button:nth-child(4){
+    background: #111;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+}
+
+.cart-coupon-area{
+    background: white;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.cart-coupon-area input{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-apply{
+    border-radius: 10px;
+    background: #111;
+}
+
+.btn-apply:hover{
+    background: #ff6600;
+}
+
+.card{
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h4{
+    font-weight: 700;
+}
+
+.card .d-flex{
+    padding: 5px 0;
+}
+
+strong{
+    color: #ff6600;
+    font-size: 18px;
+}
+
+.btn-dark{
+    background: linear-gradient(135deg, #111, #333);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-dark:hover{
+    background: linear-gradient(135deg, #ff6600, #ff8a00);
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 992px){
+
+    .carro-layout{
+        flex-direction: column;
+    }
+
+    .card{
+        position: static !important;
+    }
+
+    .shop_table th,
+    .shop_table td{
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .shop_table img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .carro-container{
+        padding: 20px 10px;
+    }
+    .table-responsive{
+        overflow-x: auto;
+        border-radius: 12px;
+    }
+    .shop_table{
+        min-width: 650px; 
+    }
+    h2{
+        font-size: 22px;
+    }
+    .shop_table td button{
+        width: 26px;
+        height: 26px;
+    }
+
+    .cart-coupon-area{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-apply{
+        width: 100%;
+    }
+
+    .card{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .shop_table{
+        min-width: 600px;
+    }
+
+    .shop_table img{
+        width: 45px;
+    }
+
+    strong{
+        font-size: 16px;
+    }
+}
+
+
+
